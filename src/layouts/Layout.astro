@@ -17,35 +17,130 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<nav class="bg-[#161617CC]">
+			<div class="bg-[#161617CC] flex justify-center items-center p-3">
+				<ul class="flex text-gray-400 text-xs justify-center items-center gap-10 font-medium">
+					<li><img src="../../public/apple.svg" alt="" class="text-gray-400"></li>
+					<li>Store</li>
+					<li>Mac</li>
+					<li>iPad</li>
+					<li>iPhone</li>
+					<li>Watch</li>
+					<li>Vision</li>
+					<li>AirPods</li>
+					<li>Tv y Home</li>
+					<li>Entertainment</li>
+					<li>Accessories</li>
+					<li>Support</li>
+					<li><img src="../../public/search.svg" alt="" class="text-gray-400"></li>
+					<li><img src="../../public/bagbuy.svg" alt="" class="text-gray-400"></li>
+				</ul>
+			</div>
+		</nav>
+		<section class="">
+			<div class="bg-[#000000]">
+				<h1 class="font-bold text-6xl text-center text-white">iPhone 15</h1>
+				<p class="font-semibold text-2xl text-center mt-1 text-white">New camera. New design. Newphona</p>
+				<div class="flex gap-4 justify-center mt-4">
+					<button class="rounded-2xl bg-cyan-500 text-white font-semibold p-2">Learn more</button>
+					<button class="rounded-2xl font-semibold border-solid border-2 border-cyan-500 p-2 text-white">Buy</button>
+				</div>
+				<img src="https://www.apple.com/v/iphone-15-pro/c/images/meta/iphone-15-pro_overview__f8jz7aagka2q_og.png" class="w-full h-[700px]" alt="">
+			</div>
+				
+			<div class="">
+				<div class="flex justify-center">
+					<div class="absolute">
+					<h1 class="font-bold text-6xl text-center mt-4">iPhone 15</h1>
+					<p class="font-semibold text-2xl text-center mt-1">New camera. New design. Newphona</p>
+					<div class="flex gap-4 justify-center mt-4">
+						<button class="rounded-2xl bg-cyan-500 text-white font-semibold p-2">Learn more</button>
+						<button class="rounded-2xl font-semibold border-solid border-2 border-cyan-500 p-2">Buy</button>
+					</div>
+					</div>
+					</div>
+				<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch_FMT_WHH?wid=1280&hei=492&fmt=p-jpg&qlt=80&.v=1692925261454" class="w-full h-[900px]" alt="">
+			</div>
+			<div class="">
+				<div class="flex justify-center">
+				<div class="absolute">
+				<h1 class="font-bold text-6xl text-center mt-4">Macbook Air</h1>
+				<p class="font-semibold text-2xl text-center mt-1">Lean. Mean. M3 machine</p>
+				<div class="flex gap-4 justify-center mt-4">
+					<button class="rounded-2xl bg-cyan-500 text-white font-semibold p-2">Learn more</button>
+					<button class="rounded-2xl font-semibold border-solid border-2 border-cyan-500 p-2">Buy</button>
+				</div>
+				</div>
+				</div>
+				<img src="https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.large.jpg" class="w-full h-[1000px]" alt="">
+			</div>
+		</section>
+		
+		<section class="grid items-center justify-center mt-5">
+			<div class="grid grid-cols-2 justify-center items-center">
+				<div class="mr-3">
+					<div class="bg-black w-max p-4">
+						<img src="../../public/WDC.png" alt="">
+						<div class="flex justify-center items-center">
+						<div class="bg-black w-max">
+							<p class="text-white font-semibold text-center">Apple Worldwide Developers Cnference.</p>
+							<p class="text-white font-semibold text-center">Join us online June 10-14</p>
+							<div class="flex justify-center">
+								<button class="rounded-2xl bg-cyan-500 text-white font-semibold p-2 ">Learn more</button>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="mt-3 mr-3">
+						<div class="bg-black p-4 absolute">
+							<div class="flex justify-center items-center">
+							<div class="bg-black w-max">
+								<p class="text-white font-semibold text-center text-2xl">Apple Watch</p>
+								<p class="text-white font-semibold text-center">Series 9</p>
+								<div class="flex justify-center">
+									<button class="rounded-2xl bg-cyan-500 text-white font-semibold p-2 ">Learn more</button>
+								</div>
+							</div>
+							</div>
+							<img src="https://bgr.com/wp-content/uploads/2023/09/apple-watch-series-9-bgr-1.jpg?quality=82&strip=all&resize=1400,1400 " class="w-[659px] h-[407px]" alt="">
+							
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<div class="bg-[url(https://mitsloanreview.mx/wp-content/uploads/2024/02/mujer-usando-apple-vision-pro.jpg)] w-[691px] h-[527px]">
+							<div class="h-[415px]"></div>
+							<div class="flex justify-center items-center place-items-end">
+							<div class="">
+								<h1 class="font-bold text-center text-2xl">Vision Pro</h1>
+								<p class=" font-semibold text-center text-white">Join us online June 10-14</p>
+									<button class="rounded-2xl bg-cyan-500 text-white font-semibold p-2 mr-4">Learn more</button>
+									<button class="rounded-2xl font-semibold border-solid border-2 border-cyan-500 p-2 text-cyan-500">Buy</button>
+							</div>
+							
+							</div>
+					</div>
+					<div class="mt-3">
+						<div class="bg-white p-4 absolute">
+							<div class="flex justify-center items-center">
+							<div class="w-max">
+								<h1 class="font-bold text-2xl text-center">iPad</h1>
+								<p class="text-black font-semibold text-center">Lovable. Drawable. Magical</p>
+								<div class="flex justify-center mr-4">
+									<button class="rounded-2xl bg-cyan-500 text-white font-semibold p-2 mr-4">Learn more</button>
+									<button class="rounded-2xl font-semibold border-solid border-2 border-cyan-500 p-2">Buy</button>
+								</div>
+							</div>
+							</div>
+							<img src="https://www.apple.com/co/ipad-10.9/images/overview/hero/hero__ecv967jz1y82_large.jpg " class="w-[659px] h-[407px] mt-1" alt="">
+							
+					</div>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+
 </style>
